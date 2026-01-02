@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sarvesh — 3rd-year PhD student in computational condensed matter physics at Cornell University." />
+    <title>Sarvesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="skier-container">
+        <svg class="skier" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="3" fill="#333"/>
+            <line x1="25" y1="28" x2="25" y2="35" stroke="#333" stroke-width="2"/>
+            <line x1="25" y1="30" x2="20" y2="35" stroke="#333" stroke-width="2"/>
+            <line x1="25" y1="30" x2="30" y2="35" stroke="#333" stroke-width="2"/>
+            <line x1="25" y1="35" x2="22" y2="40" stroke="#333" stroke-width="2"/>
+            <line x1="25" y1="35" x2="28" y2="40" stroke="#333" stroke-width="2"/>
+            <!-- Skis -->
+            <line x1="18" y1="42" x2="26" y2="42" stroke="#333" stroke-width="3"/>
+            <line x1="24" y1="42" x2="32" y2="42" stroke="#333" stroke-width="3"/>
+            <!-- Ski poles -->
+            <line x1="20" y1="32" x2="18" y2="38" stroke="#333" stroke-width="1"/>
+            <line x1="30" y1="32" x2="32" y2="38" stroke="#333" stroke-width="1"/>
+        </svg>
+    </div>
+    <header class="site-header">
+        <h1 class="sr-only">Sarvesh</h1>
+        <nav class="main-nav">
+            <a href="#hero" aria-current="page">Home</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Sarvesh Chaudhari</h1>
+            <p>3rd-year PhD student in Physics at Cornell University</p>
+            <p>Computational and theoretical condensed matter physics under Prof. Tomas Arias</p>
+        </div>
+    </section>
+    <img src="images/s2.jpg" alt="Research image" class="spanning-image" />
+
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>I am a third-year PhD student in the Department of Physics at Cornell University, working in the field of computational and theoretical condensed matter physics. My research focuses on understanding the fundamental properties of materials through quantum mechanical simulations and theoretical modeling.</p>
+        <p>Outside of academia, I enjoy hiking, skiing and just being outdoors. I also like sports, I usually play basketball or volleyball.</p>
+    </section>
+
+    <section id="research" class="section">
+        <h2>Research</h2>
+        <p>My work is in the Arias Group, led by Professor Tomas Arias, where we use ab initio quantum mechanical calculations to explore how complex material behaviors emerge from the interactions of electrons and nuclei. This involves developing and applying computational methods to study phenomena across different length and time scales.</p>
+        <p>Current projects include investigating phonon dynamics in low-dimensional systems, surface interactions, and the quantum mechanics of materials in contact with solutions. These studies contribute to understanding mechanical properties, crystal growth processes, and potential applications in energy technologies like solar cells and fuel cells.</p>
+        <p>Our research employs density functional theory (DFT) and beyond-DFT methods to accurately model electronic structure and dynamics. We develop novel computational algorithms to handle large-scale simulations of complex systems, including those with defects, interfaces, and under external conditions like pressure or electric fields.</p>
+        <p>The interdisciplinary nature of our work bridges fundamental physics with practical applications, from designing new materials for energy storage to understanding biological systems at the molecular level. We collaborate with experimental groups to validate our theoretical predictions and guide future experiments.</p>
+        <p>Key techniques we use include:</p>
+        <ul>
+            <li>Ab initio molecular dynamics simulations</li>
+            <li>Phonon calculations and thermal transport</li>
+            <li>Surface and interface modeling</li>
+            <li>Quantum chemistry methods</li>
+            <li>Machine learning for materials discovery</li>
+        </ul>
+        <p>These computational tools allow us to predict material properties before synthesis, saving time and resources in the development of new technologies.</p>
+        <p>
+            <a href="https://arxiv.org/abs/2510.02544" target="_blank" rel="noopener noreferrer" class="button">Research Paper</a>
+            <a href="https://physics.cornell.edu/tomas-arias" target="_blank" rel="noopener noreferrer" class="button">Arias Group Website</a>
+        </p>
+    </section>
+
+    <section id="interests" class="section">
+        <div class="interests-content">
+            <h2>Interests</h2>
+            <p>I enjoy spending time outdoors, especially skiing and hiking, and I’m usually up for trying new activities or sports. I play basketball and volleyball and like staying active.</p>
+            <p>Outside of that, I’m interested in computers—building and upgrading PCs, keeping up with new hardware, and following developments in computer components.</p>
+        </div>
+        <img src="images/s1.jpg" alt="Interests image" class="interests-image" />
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations, discussions, or just to connect.</p>
+        <div class="contact-links">
+            <a href="mailto:sarvesh@cornell.edu">Email</a>
+            <a href="https://github.com/sc2923" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </section>
+
+    <!-- contact section removed; replaced by footer icon strip -->
+
+        <div class="contact-strip" aria-label="Contact links">
+        </div>
+
+        <footer id="site-footer" class="site-footer">
+            © 2025 Sarvesh – Built with HTML & CSS
+        </footer>
+    <script src="site.js" defer></script>
+</body>
+</html>
