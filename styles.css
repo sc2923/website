@@ -348,7 +348,7 @@ body.lightbox-open{overflow:hidden}
 @media (max-width:680px){
   /* Header/nav adjustments */
   .site-header{padding:0.5rem}
-  .main-nav a{padding:0.32rem 0.6rem;font-size:0.95rem}
+  .main-nav a{padding:0.5rem 0.8rem;font-size:0.95rem; min-height: 44px; display: flex; align-items: center;}
 
   /* Hero adjustments */
   .hero{margin:2rem auto 1rem auto;padding:1.5rem;border-radius:0}
@@ -356,6 +356,14 @@ body.lightbox-open{overflow:hidden}
   .spanning-image { display: none; } /* Hide on mobile */
   .skier-container { display: none; } /* Hide skier on mobile */
   body { background-size: cover; } /* Use cover on mobile for better fit */
+
+  /* Interests section: stack vertically on mobile */
+  #interests { flex-direction: column; }
+  .interests-content { margin-right: 0; margin-bottom: 1rem; }
+  .interests-image { width: 100%; height: auto; max-height: 300px; }
+
+  /* About section: remove right padding since image is hidden */
+  #about { padding-right: 2rem; }
 
   /* Research: stack rows vertically and enforce media-first ordering
      For normal rows the DOM is media then body -> column shows media then body
@@ -369,15 +377,27 @@ body.lightbox-open{overflow:hidden}
 
   /* Gallery and buttons scale down: keep two items per row with good spacing */
   .art-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:0.9rem}
-  .button-container a{display:inline-block;padding:0.45rem 0.7rem}
+  .button-container a{display:inline-block;padding:0.6rem 1rem; min-height: 44px;}
+  .button { padding: 0.6rem 1rem; min-height: 44px; }
+
+  /* Contact links: ensure touch-friendly */
+  .contact-links { flex-direction: column; gap: 0.5rem; }
+  .contact-links a { padding: 0.5rem 0; min-height: 44px; display: flex; align-items: center; }
 }
 
 @media (max-width:420px){
   .profile-photo{width:96px;height:96px}
-  .main-nav a{padding:0.3rem 0.45rem;font-size:0.9rem}
+  .main-nav a{padding:0.5rem 0.6rem;font-size:0.9rem; min-height: 44px;}
   .hero h1{font-size:1.25rem}
   .research-media.small img{max-width:220px}
   .research-media.medium img{max-width:300px}
+
+  /* Further adjustments for small screens */
+  .section, #about, #research, #projects { padding: 1.5rem 1rem; }
+  .hero { padding: 1rem; margin: 1rem auto; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .button { padding: 0.7rem 1.2rem; font-size: 1rem; }
 }
 
 /* Utility */
