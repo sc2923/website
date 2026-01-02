@@ -353,7 +353,7 @@ body.lightbox-open{overflow:hidden}
   /* Hero adjustments */
   .hero{margin:2rem auto 1rem auto;padding:1.5rem;border-radius:0; display: flex; flex-direction: column; align-items: center;}
   .hero-content { max-width: 100%; text-align: center; }
-  .spanning-image { display: block; position: relative; left: auto; top: auto; width: 100%; max-width: 300px; height: auto; margin-top: 1rem; transform: none; } /* Show and stack below text */
+  .spanning-image { display: block; position: relative; left: auto; top: auto; width: 100%; max-width: 150px; height: auto; margin: 1rem auto; transform: none; } /* Show smaller and centered */
   .skier-container { display: block; right: 20px; left: auto; } /* Show skier on right side */
   body { background-size: cover; } /* Use cover on mobile for better fit */
 
