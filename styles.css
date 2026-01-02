@@ -351,10 +351,10 @@ body.lightbox-open{overflow:hidden}
   .main-nav a{padding:0.5rem 0.8rem;font-size:0.95rem; min-height: 44px; display: flex; align-items: center;}
 
   /* Hero adjustments */
-  .hero{margin:2rem auto 1rem auto;padding:1.5rem;border-radius:0}
-  .hero-content { max-width: 100%; }
-  .spanning-image { display: none; } /* Hide on mobile */
-  .skier-container { display: none; } /* Hide skier on mobile */
+  .hero{margin:2rem auto 1rem auto;padding:1.5rem;border-radius:0; display: flex; flex-direction: column; align-items: center;}
+  .hero-content { max-width: 100%; text-align: center; }
+  .spanning-image { display: block; position: relative; left: auto; top: auto; width: 100%; max-width: 300px; height: auto; margin-top: 1rem; transform: none; } /* Show and stack below text */
+  .skier-container { display: block; right: 20px; left: auto; } /* Show skier on right side */
   body { background-size: cover; } /* Use cover on mobile for better fit */
 
   /* Interests section: stack vertically on mobile */
@@ -362,7 +362,7 @@ body.lightbox-open{overflow:hidden}
   .interests-content { margin-right: 0; margin-bottom: 1rem; }
   .interests-image { width: 100%; height: auto; max-height: 300px; }
 
-  /* About section: remove right padding since image is hidden */
+  /* About section: adjust padding */
   #about { padding-right: 2rem; }
 
   /* Research: stack rows vertically and enforce media-first ordering

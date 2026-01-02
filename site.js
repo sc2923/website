@@ -26,6 +26,11 @@
       let maxTranslateX = window.innerWidth - startX - 60;
       let maxTranslateY = window.innerHeight - startY - 60;
 
+      // On mobile, only move vertically
+      if (window.innerWidth <= 680) {
+        maxTranslateX = 0;
+      }
+
       function updateSkier() {
         const scrollY = window.scrollY;
         const maxScroll = document.body.scrollHeight - window.innerHeight;
@@ -41,6 +46,10 @@
         const newStartY = newRect.top;
         maxTranslateX = window.innerWidth - newStartX - 60;
         maxTranslateY = window.innerHeight - newStartY - 60;
+        // On mobile, only move vertically
+        if (window.innerWidth <= 680) {
+          maxTranslateX = 0;
+        }
         updateSkier();
       }
 
